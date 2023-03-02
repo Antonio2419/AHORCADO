@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(87, 87, 84, 0.774)),                 
+     url("../../Ahorcado/img/logo.png");
+      
+    font-family: 'Carter One', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+header{
+    background: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+h1{
+  margin: 0;
+  color: rgba(250, 251, 251, 0.378);
+  
+}
+main{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(225, 231, 233, 0.071);
+   
+   
+}
+#imagen{
+    width: 300px;
+    border-radius: 20px;
+    display: block;
+    background: none;
+   
+}
+#jugar{
+    font-size: 26px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(129, 233, 233);
+}
+#palabra__adivinar{
+    text-align: center;
+    height: 5rem;
+    font-size: 32px;
+     
+}
+#palabra__adivinar span{
+    vertical-align: bottom;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+}
+#letras{
+    margin-top: 40px;
+    display: flex;
+    font-family: 'Carter One';
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#letras button{
+    border-radius: 50px;
+    font-family: 'Carter One';
+    border: none;
+    font-size: 42;
+    width: 48px;
+    padding: 6px ;
+    text-align: center;
+    background-color: rgb(129, 233, 233);
+}
