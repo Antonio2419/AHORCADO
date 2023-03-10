@@ -3,8 +3,8 @@ let cant_errores = 0; //cuantas veces me equivoqué
 let cant_aciertos = 0; //cuantas letras acerté
 
 const palabras = [
-    'programacion', 'sistemas', 'programador',  'preparatoria' , 
-    'antivirus',     'bachillerato', 'superior',   'esquemas',        
+    'comida', 'sistemas', 'programa',  'preparatoria' , 
+    'antivirus',     'helado', 'superior',   'esquemas',        
     'twitch',      'diseños',   'microfono',  'analista','empleado'
            
 ];
@@ -72,14 +72,20 @@ function click_letras(event){
     }
 
     if( cant_errores == 6 ){
-        id('resultado').innerHTML ="Perdiste, la palabra era: " + palabrita;
+        id('resultado').innerHTML ="Perdiste, la palabra era:  " + palabrita;
+        const source = `img/images.jpg`;
+        imagen.src = source;
         game_over( );
     }else if( cant_aciertos == palabrita.length ){
-        id('resultado').innerHTML = "GANASTE!!";
+        id('resultado').innerHTML = "";
+        const source = `img/ganaste.png` ;
+        imagen.src = source;
         game_over( );
     }
     console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto );
     console.clear;
+   
+    
 }
 
 //fin de juego//
