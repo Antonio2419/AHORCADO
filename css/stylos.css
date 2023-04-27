@@ -3,7 +3,7 @@ body{
     background-image: linear-gradient(transparent, rgba(15, 15, 15, 0.342)),                 
      url("../img/logo.png")  ;
     background-repeat:repeat-x;
-    font-size: 22px;
+    font-size: 32px;
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
     min-height: 100vh;
     color: aliceblue;
@@ -21,9 +21,10 @@ h1{
   
 }
 main{
-    width: 70%;
+    width: 80%;
+    height: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 0px 20px 10px;
     border-radius: 20px;
     background: rgba(46, 175, 250, 0.071);
    
@@ -31,9 +32,10 @@ main{
 }
 #imagen{
     width: 250px;
-    height: 250px;
+    height: 200px;
     border-radius: 20px;
     display: block;
+     margin: 0px;
 
    
 }
@@ -60,7 +62,6 @@ main{
     display: inline-block;
 }
 #letras{
-    
     margin-top: 40px;
     display: flex;
     font-family: 'Carter One';
@@ -72,9 +73,35 @@ main{
     border-radius: 50px;
     font-family: 'Carter One';
     border: none;
-    font-size: 42;
+    font-size: 22px;
     width: 48px;
     padding: 6px ;
     text-align: center;
     background-color: rgb(253, 253, 253);
+    color: black;
 }
+@media screen and (max-width: 767px) {
+    body{
+        margin: 0 auto;
+    }
+     h1{
+      font-size: 26px;
+    }
+    #imagen{
+        width: 150px;
+        height: 150px;
+         margin: 0;
+    }
+    #jugar{
+        font-size: 26px;
+        margin: 0;
+    }
+    #palabra__adivinar{
+        font-size: 22px;
+    }
+    #letras button{
+        font-size: 10px;
+        
+    }
+
+  }
